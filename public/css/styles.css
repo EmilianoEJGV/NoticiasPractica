@@ -1,0 +1,100 @@
+/* Estilos básicos para el cuerpo y enlaces */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los contenedores y tarjetas de noticias */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+/* Estilos para la versión resumida de la tarjeta */
+.news-card {
+    margin: 50px 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 300px; /* Tamaño inicial de la tarjeta */
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news-card h2 {
+    margin-top: 0;
+}
+
+.news-card p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la versión expandida de la tarjeta */
+.news-card.expanded {
+    width: 600px; /* Tamaño expandido de la tarjeta */
+}
+
+
+#logo {
+    position: fixed; /* Fija la posición del header */
+    top: 0; /* Coloca el header en la parte superior de la página */
+    left: 0; /* Ajusta el margen izquierdo */
+    width: 100%; /* Ajusta el ancho al 100% del viewport */
+   
+    z-index: -1;
+    
+    padding: -30px; /* Añade espacio interno */
+}
+
+#logo img {
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    border-radius: 200px;
+}
+
+/* Estilos para la sección que contiene el botón de agregar noticias */
+section {
+    text-align: center; /* Centra el contenido de la sección */
+    margin-top: 20px; /* Añade margen superior para separarlo del header */
+    padding: 20px;
+  
+}
+
+/* Estilos para el botón de agregar noticias */
+#add-news-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none; /* Elimina cualquier subrayado de texto */
+    font-size: 16px; /* Aumenta el tamaño de la fuente para mejor legibilidad */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Añade una sombra ligera para un efecto elevado */
+}
+
+#add-news-btn:hover {
+    background-color: #0056b3;
+}

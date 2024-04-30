@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio suficiente */
+    gap: 20px; /* Espacio entre los contenedores */
+    
+}
+
+.form-container, #edit-news-form, #news-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(50% - 40px); /* Calcula el ancho para 2 columnas con un espacio en medio */
+    max-width: 600px;
+  
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#news-list div {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+#news-list h3 {
+    margin-top: 0;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.menchowey {
+    display: flex;
+    
+    padding: 200px;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio suficiente */
+    gap: 30px; /* Espacio entre los contenedores */
+}
+
+
+#editForm #button-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+#editForm button {
+    padding: 8px 10px; /* Reduce el relleno */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde sutil */
+    background-color: #266b0b; /* Color de fondo */
+    color: white; /* Color de texto */
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+    flex-grow: 0; /* Evita que los botones crezcan para llenar el espacio */
+    width: 150px; /* Ancho fijo para ambos botones */
+}
+
+#editForm button:hover {
+    background-color: #1e5409; /* Color más oscuro al pasar el mouse */
+}
+
+#editForm button:active {
+    background-color: #143a06; /* Color al presionar el botón */
+}
+
+
+
+/* Estilos para la sección que contiene el botón de agregar noticias */
+section {
+    text-align: center; /* Centra el contenido de la sección */
+    margin-top: 20px; /* Añade margen superior para separarlo del header */
+    padding: 20px;
+  
+}
+
+/* Estilos para el botón de agregar noticias */
+#add-news-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none; /* Elimina cualquier subrayado de texto */
+    font-size: 16px; /* Aumenta el tamaño de la fuente para mejor legibilidad */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Añade una sombra ligera para un efecto elevado */
+}
+
+#add-news-btn:hover {
+    background-color: #0056b3;
+}

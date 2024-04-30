@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Noticia</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+    <section>
+        <a href="index.html" id="add-news-btn">Ver noticias</a>
+    </section>
+    <div class="menchowey">
+    <div class="form-container">
+        <h1>Agregar Nueva Noticia</h1>
+        <form id="newsForm">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="content">Descripción:</label>
+            <textarea id="content" name="content" required></textarea>
+            <label for="newsImage">Imagen de la noticia:</label>
+            <input type="file" id="newsImage" name="newsImage" required><br>
+            <label for="newsDate">Fecha:</label>
+            <input type="date" id="newsDate" name="newsDate" required>
+            <button type="submit">Publicar Noticia</button>
+        </form>
+    </div>
+
+    <div id="edit-news-form" style="display:none;">
+        <h2>Editar Noticia</h2>
+        <form id="editForm">
+            <input type="hidden" id="edit-id" name="edit-id">
+            <input type="text" id="edit-title" name="edit-title" required>
+            <textarea id="edit-content" name="edit-content" required></textarea>
+            <input type="date" id="edit-newsDate" name="edit-newsDate" required>
+            <div id="button-container">
+                <button type="submit">Guardar Cambios</button>
+                <button type="button" id="cancelButton">Cancelar</button>
+
+            </div>
+        </form>
+    </div>
+
+    <div id="news-list">
+        <!-- Las noticias se cargarán aquí -->
+    </div>
+
+    
+    
+      
+
+</div>
+
+    <script src="js/Manejonoticias.js"></script>
+    <script src="js/FormScript.js"></script>
+</body>
+</html>
